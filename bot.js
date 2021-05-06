@@ -64,7 +64,7 @@ s4d.client.on('message', async (s4dmessage) => {
     if ((s4dmessage.content) == '+level') {
       s4dmessage.channel.send(String(([s4dmessage.member,', you are currently level: ',member_level].join(''))));
     } else if ((s4dmessage.content) == '+xp') {
-      s4dmessage.channel.send(String(([s4dmessage.member,', you need ',100 - member_xp,' to jump to level ',member_level + 1].join(''))));
+      s4dmessage.channel.send(String(([s4dmessage.member,', you need ',100 - member_xp,'xp to jump to level ',member_level + 1].join(''))));
     }
   }
 
