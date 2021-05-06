@@ -75,6 +75,8 @@ s4d.client.on('message', async (s4dmessage) => {
 
 const bot = new Discord.Client()
 const config = require("./config.json")
+var key = 'adfonasdfvomosmodfmosdf';
+var encryptor = require('simple-encryptor')(key);
 bot.on("ready", () => {
     console.log("Loaded up!")
     bot.user.setActivity("+HELP | MINIPRACTICE.NET", {
@@ -252,6 +254,21 @@ bot.on("message", message => {
         const option = options[Math.floor(Math.random() * options.length)]
         message.channel.send(`You got ${option}`)
     }
+   
+   if (command === "encrypt") {
+        if (!args.length) {
+			    return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
+	  	  }
+        var encrypted = encryptor.encrypt(`${args}`);
+        message.channel.send(encrypted)
+	    }
+   if (command === "decrypt") {
+        if (!args.length) {
+          return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
+        }
+        var decrypted = encryptor.decrypt(`${args}`)
+        message.channel.send(`${message.author} has decrypted: ${decrypted}`)
+   }
 
 });
 

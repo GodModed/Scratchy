@@ -12,6 +12,7 @@
   "dependencies": {
     "discord.js": "^12.5.3",
     "easy-json-database": "^1.3.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "simple-encryptor": "^4.0.0"
   }
 }
