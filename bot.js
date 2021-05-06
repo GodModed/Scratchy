@@ -106,6 +106,8 @@ bot.on("message", message => {
             .addField(`\`purge\``, `Clears a number of messages between 2 or 100 \nUsage: **${config.prefix}purge [number]**`)
             .addField(`\`rps\``, `Play rock paper scissors`)
             .addField(`\`say\``, `Have the bot say something`)
+            .addField(`\`encrypt\``, `Encrypts a message`)
+            .addField(`\`decrypt\``, `Decrypts a encrypted message`)
             .addField(`\`choppymaster\``, `This bot is mostly taken from choppymaster on github. It is a open source project on github so I would like to say thanks to him.`)
         message.channel.send(helpEmbed)
     }
