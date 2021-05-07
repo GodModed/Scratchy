@@ -79,7 +79,7 @@ var key = 'adfonasdfvomosmodfmosdf';
 var encryptor = require('simple-encryptor')(key);
 bot.on("ready", () => {
     console.log("Loaded up!")
-    bot.user.setActivity("+HELP | MINIPRACTICE.NET", {
+    bot.user.setActivity("+help | minipractice.net", {
       type: "STREAMING",
       url: "https://twitch.tv/discord"
     });
