@@ -5,14 +5,16 @@ module.exports = {
           return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
         }
       var key = 'adfonasdfvomosmodfmosdf';
-      var encryptor = require('simple-encryptor')(key);
+      const encryptor = require('simple-encryptor')(key);
       var decrypted = encryptor.decrypt(`${args}`)
-      message.channel.send(`${message.author} has decrypted: ${decrypted}`)
+      let splitted = decrypted.split(',');
+      message.channel.send(`${message.author} has decrypted: ${splitted.join(' ')}`)
       console.log("------------------------")
       console.log(`Command: Decrypt`)
       console.log(`Server: ${message.guild.name}`)
       console.log(`Channel: ${message.channel.name}`)
       console.log(`Decrypted: ${decrypted}`)
+      console.log(`User: ${message.member.user.tag}`)
       console.log("------------------------")
       console.log(" ")
   }

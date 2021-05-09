@@ -14,6 +14,7 @@ module.exports = {
     console.log(`Server: ${message.guild.name}`)
     console.log(`Channel: ${message.channel.name}`)
     console.log(`Bulk Delete: ${number}`)
+    console.log(`User: ${message.member.user.tag}`)
     console.log("------------------------")
     console.log(" ")
   },

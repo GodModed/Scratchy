@@ -29,6 +29,8 @@ module.exports = {
     console.log(`Command: Ban`)
     console.log(`Server: ${message.guild.name}`)
     console.log(`Channel: ${message.channel.name}`)
+    console.log(`Banned User: ${member}`)
+    console.log(`User: ${message.member.user.tag}`)
     console.log("------------------------")
     console.log(" ")
   },

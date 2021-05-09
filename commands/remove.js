@@ -31,6 +31,7 @@ module.exports = {
     console.log(`Command: Remove`)
     console.log(`Server: ${message.guild.name}`)
     console.log(`Channel: ${message.channel.name}`)
+    console.log(`User: ${message.member.user.tag}`)
     console.log("------------------------")
     console.log(" ")
   },

@@ -28,6 +28,8 @@ module.exports = {
         console.log(`Command: Kick`)
         console.log(`Server: ${message.guild.name}`)
         console.log(`Channel: ${message.channel.name}`)
+        console.log(`Kicked User: ${member}`)
+        console.log(`User: ${message.member.user.tag}`)
         console.log("------------------------")
         console.log(" ")
   },

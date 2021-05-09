@@ -6,6 +6,8 @@ module.exports = {
     console.log(`Command: Ping`)
     console.log(`Server: ${message.guild.name}`)
     console.log(`Channel: ${message.channel.name}`)
+    console.log(`Ping: ${Date.now() - message.createdTimestamp} ms`)
+    console.log(`User: ${message.member.user.tag}`)
     console.log("------------------------")
     console.log(" ")
   },
