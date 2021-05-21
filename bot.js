@@ -75,7 +75,7 @@ s4d.client.on('message', async (s4dmessage) => {
 
 const bot = new Discord.Client()
 const client = new Discord.Client();
-const config = require("./config.json")
+
 const fs = require('fs');
 bot.commands = new Discord.Collection
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith
